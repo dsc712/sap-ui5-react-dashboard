@@ -1,15 +1,16 @@
 import React from "react";
 import { ThemeProvider } from "@ui5/webcomponents-react/lib/ThemeProvider";
+import { HashRouter } from "react-router-dom";
 import { MyApp } from "./MyApp";
 import "./App.css";
 
 function App() {
   return (
-    <div>
+    <HashRouter>
       <ThemeProvider withToastContainer>
         <MyApp />
       </ThemeProvider>
-    </div>
+    </HashRouter>
   );
 }
 
